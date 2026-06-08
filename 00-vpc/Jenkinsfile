@@ -31,7 +31,7 @@ pipeline {
             }
         }
 
-        stage(plan){
+        stage('plan'){
             steps {
                 script {
                     withAWS(credentials: 'aws-creds', region: 'us-east-1')
